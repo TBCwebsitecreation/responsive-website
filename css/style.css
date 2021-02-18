@@ -161,8 +161,163 @@ nav {
 }
 
 .hero-right .iphone img {
-
   width: 189px;
   height: 399px;
+}
+
+/* What we do section */
+.what-we-do {
+  background-color: white;
+  padding: 0;
+}
+
+.what-we-do h2 {
+  text-align: center;
+  color: rgba(137, 184, 234, 0.788);
+  line-height: 1.9rem;
+  position: relative;
+  z-index: 43;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-size: 4rem;
 
 }
+
+.what-we-do span {
+  color: rgba(73, 138, 207, 0.788);
+}
+
+#brand {
+  text-align: center;
+  padding-bottom: 5rem;
+  justify-content: center;
+  width: 42%;
+  position: relative;
+  left: 43rem;
+  line-height: 3rem;
+  color: rgba(0, 0, 0, 0.568);
+
+}
+
+.what-we-do-icons {
+  background-image: url("../Images/Icons.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  top: 3rem;
+  left: 2.9rem;
+  width: 55rem;
+  height: 20vh;
+}
+
+/* Superhero section */
+.superheroes {
+  background-image: linear-gradient(rgba(66, 65, 65, 0.788), rgba(34, 28, 28, 0.788)),
+    url("../Images/what-we-d0\ copy.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  z-index: 26;
+  padding: 0;
+}
+
+.superheroes h2 {
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  text-align: center;
+  line-height: 1.9rem;
+  position: relative;
+  z-index: 29;
+  padding-top: 12rem;
+  padding-bottom: 2rem;
+  font-size: 4rem;
+}
+
+.superheroes h2 span {
+  font-weight: 700;
+}
+
+.superhero-btn {
+  position: relative;
+  left: 65rem;
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.541);
+
+}
+
+/* instead of the picture of youtube I have take one of the videos from Meltmedia's youTube channel */
+
+.video {
+  position: relative;
+  left: 49rem;
+}
+/* GeoLocation taken from Google Maps */
+.location {
+  padding: 0;
+
+}
+
+/* address on the map */
+.card {
+  background-color: rgba(0, 0, 0, 0.555);
+  height: 26rem;
+  width: 10%;
+  line-height: 2.5rem;
+  color: white;
+  position: relative;
+  left: 30rem;
+  bottom: 30rem;
+  padding: 10px;
+}
+
+.card h3 {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.card h3 span {
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 14px;
+  padding: 0;
+  font-weight: 100;
+}
+
+.card .card-item {
+  color: rgb(240, 220, 220);
+  padding-bottom: 0px;
+}
+
+/* social media icon */
+.social-icons ul {
+  position: relative;
+  left: -12px;
+  display: flex;
+  padding-bottom: 5px;
+  padding-top: 5px;
+
+}
+
+.social-icons ul li {
+  position: relative;
+  list-style: none;
+
+}
+
+.social-icons ul li a {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
