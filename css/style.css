@@ -1,0 +1,77 @@
+/* global stylings */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-family: 'Merriweather';
+  font-size: 0.8rem;
+  color: black;
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+p {
+  font-size: 1.6rem;
+}
+section {
+  padding: 5rem 0;
+}
+
+/* Header Elements */
+
+.container {
+  background-image: radial-gradient(rgba(137, 184, 234, 0.788), rgba(137, 184, 234, 0.788)),
+    url("../Images/header-image.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  height: 90vh;
+}
+
+.logo {
+  position: relative;
+  top: 1rem;
+  left: 20rem;
+  width: 57px;
+  height: 57px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.nav-bar {
+  width: 20rem;
+  min-height: 8vh;
+  position: relative;
+  top: 0rem;
+  right: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1500;
+  transition: all 650ms ease-in-out;
+}
+
+.nav-bar ul {
+  margin: 0.5rem 0;
+  display: flex;
+}
+
+.nav-bar ul li {
+  color: #fff;
+  list-style-type: none;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
