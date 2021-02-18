@@ -42,6 +42,7 @@ section {
   height: 57px;
 }
 
+/* navigation */
 nav {
   width: 100%;
   display: flex;
@@ -74,4 +75,94 @@ nav {
   padding: 2rem;
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+.main-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.hero-left {
+  width: 100%;
+  max-width: 30rem;
+  position: relative;
+  left: 30rem;
+  top: 10rem;
+
+
+}
+
+.hero-left h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  max-width: 30rem;
+  padding-bottom: 1rem;
+  color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 52;
+
+}
+
+.hero-left h1 span {
+  font-weight: 700;
+}
+
+.hero-left p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.664);
+  line-height: 1.9;
+  width: 530px;
+  height: 190px;
+  z-index: 54;
+  margin-bottom: 30px;
+  margin-bottom: 55px;
+}
+
+.btn {
+  font-family: "Helvetica";
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.733);
+  line-height: 1.8;
+  padding: 5px 50px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 2px #fff solid;
+  cursor: pointer;
+  z-index: 55;
+}
+
+.hero-right {
+  position: relative;
+  width: 50%;
+  max-width: 70rem;
+  top: 120px;
+
+}
+
+.hero-right .ipad {
+  position: relative;
+  left: 97px;
+  z-index: 57;
+}
+
+.hero-right .ipad img {
+  height: 618px;
+  width: 410px
+}
+
+.hero-right .iphone {
+  position: absolute;
+  left: 350px;
+  top: 220px;
+  z-index: 61;
+  padding-bottom: 40px;
+}
+
+.hero-right .iphone img {
+
+  width: 189px;
+  height: 399px;
+
 }
