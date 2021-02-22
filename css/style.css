@@ -1,29 +1,62 @@
+/* css variables */
+:root {
+  --white: rgb(233, 233, 233);
+  --blue: rgb(137, 184, 234);
+  --black: rgb(70, 70, 70);
+}
+
+/* Global Variables */
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
-  box-sizing: border-box;
+}
+
+html {
+
+  font-family: 'Merriweather',
+    serif;
+  color: var(--dark);
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background: var(--white);
+  line-height: 1.4;
 }
 
-nav {
+.btn {
+  color: var(--white);
+  border: 2px var(--white) solid;
+  padding: 0.6rem 1.3rem;
+  border-radius: 3px;
+}
 
+img {
+  max-width: 100%;
+}
+
+/* to be changed LATER .. */
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+
+/* navigation starts here */
+nav {
   height: 80px;
   width: 100%;
 }
 
 label.logo {
-  color: white;
   line-height: 80px;
   padding: 0 100px;
   position: relative;
   top: 1rem;
-
-
 }
 
 nav ul {
@@ -38,7 +71,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--white);
   font-size: 17px;
   text-transform: uppercase;
   padding: 7px 13px;
@@ -58,6 +91,8 @@ nav ul li a:hover {
   line-height: 80px;
   margin-right: 40px;
   cursor: pointer;
+  display: none;
+
 }
 
 #check {
@@ -73,22 +108,255 @@ header {
   height: 90vh;
 }
 
+.top-container {
+  display: flex;
+  height: 88%;
+  align-items: center;
+  margin-left: 5%;
+}
 
-/* media queries */
+.hero-left {
+  flex-basis: 50%;
+}
 
-@media (max-width: 952px) {
-  label.logo {
-    padding-left: 50px;
+.hero-left h1 {
+  color: var(--white);
+  width: 50%;
+  line-height: 2.9rem;
+  padding-bottom: 30px;
+  position: relative;
+  left: 232px;
+
+}
+
+.hero-left p {
+  color: var(--white);
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding-bottom: 30px;
+  width: 56%;
+  position: relative;
+  left: 232px;
+}
+
+.hero-left .btn {
+  width: 50%;
+  position: relative;
+  left: 232px;
+}
+
+
+.hero-right #iphone {
+  position: relative;
+  right: 11rem;
+}
+
+/* what-we-do */
+
+.what-we-do {
+  padding: 0;
+  margin: 0;
+  height: 30vh;
+  align-content: center;
+}
+
+.what-we-do h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  color: var(--blue);
+  text-align: center;
+  font-size: 3vw;
+}
+
+.what-we-do h2 span {
+  font-weight: 700;
+}
+
+.what-we-do p {
+  font-size: 0.7vw;
+  text-align: center;
+  width: 30%;
+  position: relative;
+  left: 35vw;
+  line-height: 2rem;
+}
+
+.what-we-do img {
+  width: 30%;
+  position: relative;
+  left: 35vw;
+  padding-top: 2rem;
+}
+
+/* superhero */
+.superhero {
+  background-image: radial-gradient(rgba(8, 8, 8, 0.788), rgba(8, 8, 8, 0.788)),
+    url("../Images/what-we-d0\ copy.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  height: 30vh;
+  text-align: center;
+}
+
+section.superhero h2 {
+  color: var(--white);
+  font-weight: 100;
+  text-align: center;
+  font-size: 2.3rem;
+  position: relative;
+  top: 30%;
+}
+
+section.superhero h2 span {
+  font-weight: 700;
+}
+
+section.superhero .btn {
+  position: relative;
+  top: 15vh;
+  width: 30%;
+  height: 40px;
+  text-align: center;
+}
+
+.video-wrapper {
+  max-width: 660px;
+}
+
+.you-tube {
+  position: relative;
+  width: 100%;
+  /* 16:9 */
+  padding-bottom: 56.25%;
+  height: auto;
+}
+
+.you-tube iframe {
+  position: absolute;
+  top: 10%;
+  left: 26%;
+  width: 50%;
+  height: 50%;
+}
+
+/* ------------------------------------------------------------- 
+MEDIA QUERIES
+ ------------------------------------------------------------- */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+
+
+  .hero-right #ipad {
+    height: 500px;
   }
 
-  nav ul li a {
-    font-size: 16px;
-    color: white;
+  .hero-right #iphone {
+    height: 350px;
+    top: 40px;
+    right: 140px;
+  }
 
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+
+  header {
+    height: 60vh;
+  }
+
+  .hero-left h1 {
+    width: 90%;
+    position: relative;
+    left: 32px;
+    bottom: 10px;
+    font-size: 20px;
+    line-height: 1.5rem;
+  }
+
+  .hero-left p {
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.7rem;
+    padding-bottom: 30px;
+    width: 90%;
+    position: relative;
+    left: 32px;
+    bottom: 20px;
+  }
+
+  .hero-left .btn {
+    width: 90%;
+    position: relative;
+    left: 32px;
+    bottom: 20px;
+
+  }
+
+  .hero-right #ipad {
+    height: 300px;
+    position: relative;
+    bottom: 2rem;
+    left: 20px;
+  }
+
+  .hero-right #iphone {
+    height: 200px;
+    position: relative;
+    bottom: 2rem;
+    right: 60px
   }
 }
 
-@media (max-width:858px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  header {
+    height: 48vh;
+
+  }
+
+  .hero-left h1 {
+    width: 100%;
+    position: relative;
+    left: 32px;
+    bottom: 10px;
+    font-size: 20px;
+    line-height: 1.5rem;
+  }
+
+  .hero-left p {
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.7rem;
+    padding-bottom: 30px;
+    width: 90%;
+    position: relative;
+    left: 32px;
+    bottom: 20px;
+  }
+
+  .hero-left .btn {
+    width: 90%;
+    position: relative;
+    left: 32px;
+    bottom: 20px;
+    display: none;
+
+  }
+
+  .hero-right #ipad {
+    height: 300px;
+    position: relative;
+    bottom: 2rem;
+    left: 20px;
+  }
+
+  .hero-right #iphone {
+    height: 200px;
+    position: relative;
+    bottom: 2rem;
+    right: 60px
+  }
+
   .checkbtn {
     display: block;
   }
@@ -97,30 +365,199 @@ header {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
+    background: var(--blue);
     top: 80px;
     left: -100%;
     text-align: center;
-    transition: all .5s ease-in-out;
+    transition: all, .5s;
+    z-index: 1;
   }
 
   nav ul li {
     display: block;
+    margin: 50px 0;
+    line-height: 30px;
   }
 
-  nav ul li a {
-    font-size: 20px;
-  }
-
-  nav ul li a.active,
-  nav ul li a:hover {
+  a:hover,
+  a.active {
     background: none;
-    border-bottom: 1px white solid;
-    transition: all .5s ease-in-out;
+    color: var(--black);
   }
 
   #check:checked~ul {
     left: 0;
   }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 767px) {
+
+  header {
+    height: 30vh;
+  }
+
+  label.logo img {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    right: 5rem;
+
+  }
+
+  .hero-left h1 {
+    width: 100%;
+    position: relative;
+    left: 2px;
+    bottom: 40px;
+    font-size: 17px;
+    line-height: 1.7rem;
+  }
+
+  .hero-left p {
+    display: none;
+  }
+
+  .hero-left .btn {
+    width: 100%;
+    position: relative;
+    left: 1px;
+    bottom: 40px;
+    font-size: 14px;
+    padding: 2px 10px
+  }
+
+  .hero-right #ipad {
+    height: 150px;
+    position: relative;
+    bottom: 2rem;
+    left: 20px;
+  }
+
+  .hero-right #iphone {
+    height: 100px;
+    position: relative;
+    bottom: 2rem;
+    left: -20px
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--blue);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all, .5s;
+    z-index: 1;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: var(--black);
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+
+  header {
+    height: 30vh;
+  }
+
+  label.logo img {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: 5rem;
+    bottom: 1rem;
+
+  }
+
+  .hero-left h1 {
+    width: 100%;
+    position: relative;
+    left: 2px;
+    bottom: 40px;
+    font-size: 17px;
+    line-height: 1.7rem;
+  }
+
+  .hero-left p {
+    display: none;
+  }
+
+  .hero-left .btn {
+    width: 100%;
+    position: relative;
+    left: 1px;
+    bottom: 50px;
+    font-size: 14px;
+    padding: 2px 10px
+  }
+
+  .hero-right #ipad {
+    height: 120px;
+    position: relative;
+    bottom: 2rem;
+    left: 20px;
+  }
+
+  .hero-right #iphone {
+    height: 80px;
+    position: relative;
+    bottom: 2rem;
+    left: -20px
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--blue);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all, .5s;
+    z-index: 1;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: var(--black);
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+
 
 }
